@@ -75,7 +75,7 @@ class TLDetector(object):
             msg (Image): image from car-mounted camera
         """
         global ctr
-        if ctr%3==0:
+        if ctr%15==0:
             self.has_image = True
             self.camera_image = msg
             light_wp, state = self.process_traffic_lights()
